@@ -6,13 +6,30 @@ html(lang="en")
     title Document
     link(rel="stylesheet", href="/src/styles/main.scss")
   body 
-    h1 HEllo world
+    h1
+      i.fa-solid.fa-globe  
+      span Hello world!
     .container
       .row
         .col-6 
-          h2 Coluna 6
+          // Button trigger modal
+          button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
+            | Launch demo modal
+          // Modal
+          #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  h1#exampleModalLabel.modal-title.fs-5 Modal title
+                  button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                  | ...
+                .modal-footer
+                  button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                  button.btn.btn-primary(type='button') Save changes
+
         .col-6
           h2 Coluna 6
     img(src="/src/assets/up.svg", alt="", width="100px")
     footer 
-        script(src="/src/js/main.js") 
+        script(type="module", src="/src/js/main.js") 
