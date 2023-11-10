@@ -1,6 +1,6 @@
-<h1>Setting up Vite, Front-end</h1>
+<h1> Welcome to Vite Starter for "Web Designers"</h1>
 
-<p>Ambiente para webdesigner baseado em Pug, Bootstrap e Fontawesome</p>
+<p><b>Bootstrap 5</b>, <b>Pugjs</b> and <b>Font-awesome</b>. All Sass (*.scss)</p>
 
 <pre>to start <strong>'yarn dev'</strong> to compile <strong>'yarn build'</strong></pre>
 
